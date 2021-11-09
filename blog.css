@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: #A079D4; */
+  background-image: linear-gradient(130deg, #004986, #A079D4, #FAE053, #F1A7DC);
+  font-family: 'Nunito', sans-serif;
+}
+
+/* == NAV BAR == */
+
+.floating-menu {
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 30px 0 0 30px;
+  width: 50px;
+  z-index: 100;
+  position: fixed;
+}
+
+
+.floating-menu a:link {
+  padding: 0 5px;
+  /* color: #164B9B; */
+  color: #F6C346;
+  text-decoration: none;
+}
+
+.floating-menu a:visited {
+  /* color: #164B9B; */
+  color: #F6C346;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.floating-menu a:hover {
+  color: #505FB2;
+  font-style: italic;
+  text-decoration: none;
+}
+
+/* === INTRO SECTION === */
+
+.intro img {
+  width: 65%;
+  margin-left: 520%;
+  margin-top: 50%;
+}
+
+.getintouch {
+  animation: rotation 15s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.intro {
+  height: 60vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.6fr 2.6fr 1fr;
+  grid-template-rows: 0.3fr;
+ }
+
+ .a1 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-size: 70px;
+  color: #eee;
+  margin-top: 170px;
+  margin-left: 80px;
+ }
+
+ .a2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-size: 18px;
+  color: #eee;
+  margin-top: 260px;
+  margin-left: 85px;
+ }
+
+/* === GALLERY === */
+
+
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+
+ .column {
+   flex: ;
+   max-width: 20%;
+   margin-left: 25px;
+ }
+
+ .column img {
+   width: 80%;
+   margin-left: 250px;
+ }
+
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 800px) {
+   .intro {
+     height: 10vh;
+   }
+
+   .column {
+     flex: 50%;
+     max-width: 50%;
+   }
+ }
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+   .column {
+     flex: 100%;
+     max-width: 100%;
+   }
+
+   .intro {
+     height: 20vh;
+
+   }
+ }
+
+
+
+ .next div {
+   width: 94%;
+   min-height: 20vh;
+ }
